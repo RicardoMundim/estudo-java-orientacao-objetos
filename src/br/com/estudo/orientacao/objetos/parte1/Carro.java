@@ -1,0 +1,10 @@
+package br.com.estudo.orientacao.objetos.parte1;
+
+public class Carro {
+
+	String fabricante;
+	String modelo;
+	String cor;
+	int anoDeFabricacao;
+	
+}
