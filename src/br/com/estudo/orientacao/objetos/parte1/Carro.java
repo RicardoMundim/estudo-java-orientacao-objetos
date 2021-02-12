@@ -2,11 +2,11 @@ package br.com.estudo.orientacao.objetos.parte1;
 
 public class Carro {
 
-	String fabricante;
-	String modelo;
-	String cor;
-	int anoDeFabricacao;
-	boolean biCombustivel;
+	public String fabricante;
+	public String modelo;
+	public String cor;
+	public int anoDeFabricacao;
+	public boolean biCombustivel;
 	
 	Proprietario proprietario;
 		
