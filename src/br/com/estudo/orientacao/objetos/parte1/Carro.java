@@ -9,6 +9,12 @@ public class Carro {
 	public boolean biCombustivel;
 	
 	Proprietario proprietario;
+	
+	public void alterarModelo(String modelo) {
+		if (modelo != null) {
+			this.modelo = modelo;
+		}
+	}
 		
 	void ligar() {
 		
