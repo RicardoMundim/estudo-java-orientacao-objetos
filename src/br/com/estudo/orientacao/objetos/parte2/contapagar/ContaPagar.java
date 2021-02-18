@@ -1,4 +1,4 @@
-package br.com.estudo.orientacao.objetos.parte2;
+package br.com.estudo.orientacao.objetos.parte2.contapagar;
 
 import br.com.estudo.orientacao.objetos.parte2.enums.SituacaoConta;
 

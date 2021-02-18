@@ -1,6 +1,4 @@
-package br.com.estudo.orientacao.objetos.parte2;
-
-import br.com.estudo.orientacao.objetos.parte2.enums.Naipe;
+package br.com.estudo.orientacao.objetos.parte2.enums;
 
 public class Carta {
 

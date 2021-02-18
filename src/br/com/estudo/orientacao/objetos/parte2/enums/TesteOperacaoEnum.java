@@ -1,6 +1,4 @@
-package br.com.estudo.orientacao.objetos.parte2;
-
-import br.com.estudo.orientacao.objetos.parte2.enums.OperacaoAritmetica;
+package br.com.estudo.orientacao.objetos.parte2.enums;
 
 public class TesteOperacaoEnum {
 
