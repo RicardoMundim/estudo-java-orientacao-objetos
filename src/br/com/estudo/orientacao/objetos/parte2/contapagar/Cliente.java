@@ -1,5 +1,5 @@
 package br.com.estudo.orientacao.objetos.parte2.contapagar;
 
-public class Fornecedor extends Pessoa{
+public class Cliente extends Pessoa{
 
 }
