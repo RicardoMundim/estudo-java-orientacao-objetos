@@ -2,7 +2,7 @@ package br.com.estudo.orientacao.objetos.parte2.contapagar;
 
 import br.com.estudo.orientacao.objetos.parte2.enums.SituacaoConta;
 
-public class Conta {
+public abstract class Conta {
 
 	private String descricao;
 	private double valor;
@@ -13,6 +13,8 @@ public class Conta {
 	public Conta() {
 		this.situacaoConta = situacaoConta.PENDENTE;
 	}
+	
+	public abstract void exibirDetalhes();
 	
 	public void cancelar() {
 		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {

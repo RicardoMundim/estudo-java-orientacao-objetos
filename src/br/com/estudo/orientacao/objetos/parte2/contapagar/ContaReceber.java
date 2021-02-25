@@ -39,6 +39,18 @@ public class ContaReceber extends Conta {
 			super.cancelar();
 		}
 	}
+	
+	@Override
+	public void exibirDetalhes() {
+		System.out.println("\nConta a Receber");
+		System.out.println("===================================");
+		System.out.println("Fornecedor: " + this.getCliente().getNome());
+		System.out.println("Descrição: " + this.getDescricao());
+		System.out.println("Valor: " + this.getValor());
+		System.out.println("Data de vencimento: " + this.getDataVencimento());
+		System.out.println("Situação: " + this.getSituacaoConta());
+		System.out.println("===================================");
+	}
 
 	public Cliente getCliente() {
 		return cliente;

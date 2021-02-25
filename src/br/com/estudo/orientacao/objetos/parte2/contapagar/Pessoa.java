@@ -1,6 +1,6 @@
 package br.com.estudo.orientacao.objetos.parte2.contapagar;
 
-public class Pessoa {
+public abstract class Pessoa {
 
 	private String nome;
 
