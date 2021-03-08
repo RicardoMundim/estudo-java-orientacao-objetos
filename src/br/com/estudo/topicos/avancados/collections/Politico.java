@@ -1,8 +1,26 @@
 package br.com.estudo.topicos.avancados.collections;
 
+/**
+ * Representa um político do governo.
+ * Um político é eleito pelo povo. Ele tem o poder de
+ * influenciar a maneira como a sociedade é governada.
+ * 
+ * @author Ricardo Mundim
+ *
+ */
 public class Politico {
 
+	/**
+	 * Nome completo do político.
+	 * Não é indicado usar abreviações.
+	 */
 	private String nome;
+	
+	/**
+	 * Referência para o cargo do político.
+	 * Um cargo define o salário base do político e a
+	 * função que ele deve exercer.
+	 */
 	private Cargo cargo;
 
 	public String getNome() {

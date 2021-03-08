@@ -3,6 +3,12 @@ package br.com.estudo.topicos.avancados.collections;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
+/**
+ * Classe principal para execução do programa.
+ * 
+ * @author Ricardo Mundim
+ *
+ */
 public class PrincipalGastosPoliticos {
 
 	public static void main(String[] args) {
