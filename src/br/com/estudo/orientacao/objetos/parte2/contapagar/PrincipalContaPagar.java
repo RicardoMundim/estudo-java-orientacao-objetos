@@ -21,6 +21,7 @@ public class PrincipalContaPagar {
 		contaPagar1.setValor(1230d);
 		contaPagar1.setDataVencimento("10/05/2012");
 		contaPagar1.setFornecedor(imobiliaria);
+		
 		ContaPagar contaPagar2 = new ContaPagar(mercado, "Compras do mês", 390d, "19/05/2012");
 		
 		// instanciando contas a receber
@@ -29,8 +30,22 @@ public class PrincipalContaPagar {
 		contaReceber1.setValor(89500d);
 		contaReceber1.setDataVencimento("23/05/2012");
 		contaReceber1.setCliente(atacadista);
+		
 		ContaReceber contaReceber2 = new ContaReceber(telecom, "Manutenção em sistema de conta online",
 		53200d, "13/05/2012");
+		
+		try {
+			// pagamento e cancelamento de contas a pagar
+			contaPagar1.pagar();
+			contaPagar2.cancelar();
+
+			// recebimento e cancelamento de contas a receber
+			contaReceber1.receber();
+			contaReceber2.cancelar();
+		} catch (OperacaoContaException oce) {
+			System.out.println("Erro em operação com conta: " + oce.getMessage());
+			oce.printStackTrace();
+		}
 		
 		// exibe listagem de todas as contas com detalhamento
 		RelatorioContas relatorio = new RelatorioContas();

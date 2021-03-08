@@ -18,11 +18,11 @@ public class ContaPagar extends Conta {
 
 	}
 
-	public void pagar() {
+	public void pagar() throws OperacaoContaException {
 		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode pagar uma conta que já está paga: " + this.getDescricao() + ".");
+			throw new OperacaoContaException("Não pode pagar uma conta que já está paga: " + this.getDescricao() + ".");
 		} else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode pagar uma conta que está cancelada: " + this.getDescricao() + ".");
+			throw new OperacaoContaException("Não pode pagar uma conta que está cancelada: " + this.getDescricao() + ".");
 		} else {
 			System.out.println(
 					"Pagando conta " + this.getDescricao() + " no valor de " + this.getValor() + " e vencimento em "
